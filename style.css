@@ -7,10 +7,14 @@
 @import "./css/player.css";
 @import "./css/ellipsis.css";
 @import "./css/slider.css";
+@import "./css/page.css";
+@import "./css/layout.css";
+@import "./css/scrollbar.css";
+
 
 
 :root {
-    font-size: 16px;
+    font-size: 10px;
     --primary: #00B050;
     --white: #ffffff;
     --gray10: #B3B3B3;
@@ -28,7 +32,16 @@
     --small: normal .75em/normal var(--basefontFamily);
 }
 
-body {
-    background-color: var(--primary);
-    font-family: var(--basefontFamily);
+
+
+@media screen and (min-width: 768px) {
+    :root{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1367px) {
+    :root{
+        font-size: 18px;
+    }
 }
